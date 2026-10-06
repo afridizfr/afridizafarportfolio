@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Afridi Zafar — Game Designer & Developer portfolio.">
+<title>AFRIDI ZAFAR // GAME DESIGNER</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="scanlines"></div><div class="noise"></div>
+<div class="hud-corner top-left">SYSTEM // ONLINE</div><div class="hud-corner top-right">HYD // INDIA</div>
+
+<header class="nav">
+  <a class="brand" href="#top"><span>◈</span> AFRIDI<span class="accent">.Z</span></a>
+  <nav><a href="#missions">MISSIONS</a><a href="#profile">PROFILE</a><a href="#loadout">LOADOUT</a><a href="#contact">COMMS</a></nav>
+  <a class="nav-cta" href="assets/Afridi_Zafar_Resume.pdf" target="_blank">VIEW RESUME ↗</a>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-video"><video autoplay muted loop playsinline poster="assets/flux-01.png"><source src="assets/showreel.mp4" type="video/mp4"></video><div class="video-overlay"></div><div class="video-label">REC // GAMEPLAY SHOWREEL</div><div class="video-time">00:53 // PLAYING</div></div>
+  <div class="hero-content">
+    <div class="status-line"><span class="dot"></span> PLAYER PROFILE FOUND <span class="line"></span> LVL 03</div>
+    <div class="profile-row">
+      <div><p class="eyebrow">GAME DESIGNER // LEVEL DESIGN // QA</p><h1>AFRIDI <em>ZAFAR</em></h1></div>
+    </div>
+    <p class="hero-text">I'm a Game Design & Development student focused on creating engaging gameplay experiences. I work across gameplay mechanics, level design, prototyping, balancing and QA, with hands-on experience in Unity and Unreal Engine. I enjoy taking an idea from concept to playable build, testing what works, and iterating until the experience feels right.</p>
+    <div class="hero-actions"><a class="button primary" href="#missions">START EXPLORING <span>→</span></a><a class="button ghost" href="#showreel">WATCH SHOWREEL <span>↘</span></a></div>
+    <div class="xp-panel"><div class="xp-head"><span>PLAYER XP</span><b>GAME DESIGN / DEVELOPMENT</b><strong>03</strong></div><div class="xp-bar"><i></i></div><div class="xp-foot"><span>UNITY</span><span>UNREAL ENGINE</span><span>PROTOTYPING</span><span>PLAYTESTING</span></div></div>
+  </div>
+</section>
+
+<section class="ticker"><div>✦ QUEST LOG UPDATED &nbsp; // &nbsp; GAMEPLAY DESIGN &nbsp; // &nbsp; LEVEL DESIGN &nbsp; // &nbsp; PROTOTYPING &nbsp; // &nbsp; BALANCING &nbsp; // &nbsp; QA TESTING &nbsp; // &nbsp; GAME JAMS &nbsp; // &nbsp;</div></section>
+
+<section id="showreel" class="showreel section">
+  <div class="section-kicker"><span>01</span> // MEMORY FRAGMENT</div>
+  <div class="showreel-head"><div><p class="eyebrow">ARCHIVED GAMEPLAY</p><h2>Made with a team.<br><em>Built to move.</em></h2></div><p>Captured from one of my earlier Unreal Engine projects. Watching it back feels like opening an old save file — rough around the edges, but full of ideas.</p></div>
+  <div class="video-shell"><video controls playsinline poster="assets/flux-01.png"><source src="assets/showreel.mp4" type="video/mp4"></video><div class="video-ui"><span>FLUX AETERNUM // SHOWREEL</span><span>UNREAL ENGINE</span></div></div>
+</section>
+
+<section id="missions" class="section missions">
+  <div class="section-kicker"><span>02</span> // QUEST LOG</div>
+  <div class="section-head"><div><p class="eyebrow">SELECTED MISSIONS</p><h2>Playable ideas.<br><em>Real experiments.</em></h2></div><div class="quest-counter"><span>QUESTS COMPLETED</span><b>02</b></div></div>
+
+  <article class="mission-card featured">
+    <div class="mission-image"><img src="assets/flux-01.png" alt="Flux Aeternum environment"><span class="mission-badge">★ MAIN QUEST</span></div>
+    <div class="mission-info"><div class="mission-top"><span>MISSION 01</span><span>UNREAL ENGINE // GAME JAM</span></div><h3>FLUX AETERNUM</h3><p class="mission-type">SPEEDRUN / PARKOUR</p><p>A fast-paced first-person parkour game built around movement, momentum and speed. Developed as a four-member team, with contributions across mechanics, sound and 3D assets.</p><div class="tags"><span>GAMEPLAY</span><span>3D</span><span>SOUND</span><span>TEAMWORK</span></div><a class="mission-link" href="https://suyashdotio.itch.io/flux-eternum" target="_blank" rel="noreferrer">OPEN MISSION FILE ↗</a></div>
+  </article>
+  <div class="screens"><img src="assets/flux-02.png" alt="Flux Aeternum cave environment"><img src="assets/flux-03.png" alt="Flux Aeternum night level"><img src="assets/flux-04.png" alt="Flux Aeternum cave gate"></div>
+
+</section>
+
+<section id="minigame" class="section minigame-section">
+  <div class="section-kicker"><span>03</span> // PLAYABLE BUILD</div>
+  <div class="section-head"><div><p class="eyebrow">BUGFIX RUN // MINI GAME</p><h2>Ship the game.<br><em>Dodge the bugs.</em></h2></div><p class="game-intro">A tiny playable side-scroller about the glamorous final stage of game development: fixing bugs five minutes before submission.</p></div>
+  <div class="game-frame">
+    <div class="game-hud"><span>BUILD 1.0 // SUBMISSION RUN</span><span id="gameStatus">STATUS: IN DEVELOPMENT</span><span>WASD / ARROWS + SPACE</span></div>
+    <canvas id="devGame" width="1100" height="470" aria-label="Playable mini game where a game developer dodges bugs and reaches the submit terminal"></canvas>
+    <div class="game-overlay" id="gameOverlay"><div><span class="game-over-kicker">MISSION OBJECTIVE</span><h3>SUBMIT THE BUILD</h3><p>Dodge every bug, keep the build alive and reach the purple submission terminal.</p><button id="startGame" class="button primary">START BUILD <span>→</span></button></div></div>
+    <div class="game-controls"><span>← → MOVE</span><span>SPACE JUMP</span><span>R RESTART</span><span>REACH 100% TO SUBMIT</span></div>
+  </div>
+</section>
+
+<section id="profile" class="section profile-section">
+  <div class="section-kicker"><span>03</span> // PLAYER PROFILE</div>
+  <div class="profile-grid"><div><p class="eyebrow">ABOUT THE PLAYER</p><h2>Curious about <em>why</em> a game feels good.</h2></div><div class="profile-copy"><p>I'm Afridi Zafar, a Game Design & Development student at Backstage Pass Institute of Gaming & Technology, Hyderabad.</p><p>I enjoy turning ideas into playable experiences, testing what works, finding what doesn't, and iterating until the experience feels right. My work spans gameplay mechanics, level design, balancing, prototyping and QA.</p><div class="role-list"><span>GAME DESIGNER</span><span>LEVEL DESIGNER</span><span>QA / GAME TESTER</span></div></div></div>
+</section>
+
+<section id="loadout" class="section loadout">
+  <div class="section-kicker"><span>04</span> // LOADOUT</div><div class="section-head"><div><p class="eyebrow">SKILL TREE</p><h2>Current <em>abilities.</em></h2></div></div>
+  <div class="skill-tree">
+    <div class="skill-node unlocked"><span>01</span><b>GAME DESIGN</b><p>Gameplay mechanics, player experience, balancing and iteration.</p><i>UNLOCKED</i></div>
+    <div class="skill-node unlocked"><span>02</span><b>LEVEL DESIGN</b><p>Layouts, progression, flow, challenge and encounter design.</p><i>UNLOCKED</i></div>
+    <div class="skill-node unlocked"><span>03</span><b>PROTOTYPING</b><p>Rapidly turning ideas into playable systems and testable builds.</p><i>UNLOCKED</i></div>
+    <div class="skill-node unlocked"><span>04</span><b>QA / TESTING</b><p>Finding issues, evaluating player flow and improving through iteration.</p><i>UNLOCKED</i></div>
+  </div>
+  <div class="toolbelt"><span>UNITY</span><span>UNREAL ENGINE</span><span>GAMEPLAY MECHANICS</span><span>BALANCING</span><span>PROTOTYPING</span><span>GAME TESTING</span></div>
+</section>
+
+<section class="section achievements">
+  <div class="section-kicker"><span>05</span> // ACHIEVEMENTS</div><div class="achievement-grid">
+    <div class="achievement unlocked"><div class="icon">◆</div><div><b>FIRST BUILD</b><p>Turned ideas into playable projects.</p></div><span>✓</span></div>
+    <div class="achievement unlocked"><div class="icon">◈</div><div><b>TEAM PLAYER</b><p>Collaborated in a four-member game jam team.</p></div><span>✓</span></div>
+    <div class="achievement unlocked"><div class="icon">◇</div><div><b>ITERATOR</b><p>Design → playtest → refine.</p></div><span>✓</span></div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section"><div class="contact-grid"><div><p class="eyebrow">FINAL QUEST</p><h2>Let's make something<br><em>worth playing.</em></h2></div><div class="comms"><p>OPEN TO GAME DESIGN, LEVEL DESIGN AND QA OPPORTUNITIES.</p><a class="email" href="mailto:afridizfr73@gmail.com">afridizfr73@gmail.com ↗</a><div class="contact-links"><a href="https://www.linkedin.com/in/afridi-zafar-0a2423239" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="assets/Afridi_Zafar_Resume.pdf" target="_blank">RESUME ↗</a></div></div></div></section>
+</main>
+<footer><span>© 2026 AFRIDI ZAFAR // PLAYER 01</span><span>GAME DESIGN & DEVELOPMENT</span></footer>
+<script src="script.js"></script>
+</body></html>
